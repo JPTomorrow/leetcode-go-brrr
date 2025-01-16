@@ -19,3 +19,6 @@ Debug.Assert(twoSum.Length == 2 && twoSum[0] == 0 && twoSum[1] == 1);
 
 var palindromeNumber = PalindromeNumber.Go(121);
 Debug.Assert(palindromeNumber);
+
+var lcprefix = LongestCommonPrefix.Go(new[] { "asser", "assist", "assortment" });
+Debug.Assert(lcprefix == "ass");
