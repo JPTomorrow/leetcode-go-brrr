@@ -16,3 +16,6 @@ Console.WriteLine("Leetcode go brrrrrr!");
 
 var twoSum = TwoSum.Go(new[] { 2, 7, 10, 11 }, 9);
 Debug.Assert(twoSum.Length == 2 && twoSum[0] == 0 && twoSum[1] == 1);
+
+var palindromeNumber = PalindromeNumber.Go(121);
+Debug.Assert(palindromeNumber);
