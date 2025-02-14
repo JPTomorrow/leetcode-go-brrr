@@ -2,7 +2,7 @@
 
 public class PalindromeNumber
 {
-	public static bool Go(int x)
+	public static bool IsPalindrome(int x)
 	{
 		if (x < 0) { return false; }
 		string result = $"{x}";
@@ -12,5 +12,12 @@ public class PalindromeNumber
 			if (chars[i] != chars[chars.Length - 1 - i]) { return false; }
 		}
 		return true;
+	}
+
+	public static bool IsPalindrome(string str)
+	{
+		var s1 = str.ToLower();
+		var s2 = str.ToLower().Reverse();
+		return s1.Equals(s2);
 	}
 }
